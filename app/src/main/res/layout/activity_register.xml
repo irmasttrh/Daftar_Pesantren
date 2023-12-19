@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/green"
+    android:id="@+id/frag_create_dialog">
+
+    <LinearLayout
+        android:id="@+id/dialog_create_linearlayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/dialog_create_title"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="@string/app_name"
+            android:textSize="60sp"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textColor="@color/core_colors_platinum_white"
+            android:layout_marginTop="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dialog_create_welcome_desc"
+
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:text="Buat Akun Baru"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textColor="@color/core_colors_platinum_white"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_login_title" />
+
+        <LinearLayout
+            android:id="@+id/dialog_create_fn_ln_layout"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_create_welcome_desc"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/text_dialog_create_firstname"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:hint="Nama Depan"
+                android:textColorHint="@color/core_colors_platinum_white"
+                android:maxLines="1"
+
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textColor="@color/core_colors_platinum_white"
+
+                android:backgroundTint="@android:color/transparent"
+
+                android:autofillHints=""
+                android:inputType="text"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintWidth_percent="0.5"
+                app:layout_constraintHeight_percent="0.5"/>
+
+            <EditText
+                android:id="@+id/text_dialog_login_lastname"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+
+                android:hint="Nama Belakang"
+                android:textColorHint="@color/core_colors_platinum_white"
+                android:maxLines="1"
+
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textColor="@color/core_colors_platinum_white"
+
+                android:backgroundTint="@android:color/transparent"
+                android:autofillHints=""
+                android:inputType="text"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintWidth_default="percent"
+                app:layout_constraintHeight_default="percent"
+                app:layout_constraintWidth_percent="0.5"
+                app:layout_constraintHeight_percent="0.5"/>
+        </LinearLayout>
+        <View
+            android:layout_width="340dp"
+            android:layout_height="3dp"
+            android:background="@drawable/line_shape"
+            android:backgroundTint="@color/core_colors_platinum_white"
+            app:layout_constraintTop_toBottomOf="@id/dialog_create_fn_ln_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_gravity="center"
+            />
+        <EditText
+            android:id="@+id/etUsername"
+
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:inputType="text"
+
+            android:hint="Username"
+            android:textColorHint="@color/core_colors_platinum_white"
+            android:maxLines="1"
+
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textColor="@color/core_colors_platinum_white"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_auth_username"
+            android:backgroundTint="@android:color/transparent"
+            android:autofillHints=""
+            android:layout_gravity="center" />
+
+        <View
+            android:layout_width="340dp"
+            android:layout_height="3dp"
+            android:background="@drawable/line_shape"
+            android:backgroundTint="@color/core_colors_platinum_white"
+            app:layout_constraintTop_toBottomOf="@id/etUsername"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/etPassword"
+
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:inputType="textPassword"
+
+            android:hint="Password"
+            android:textColorHint="@color/core_colors_platinum_white"
+            android:maxLines="1"
+
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textColor="@color/core_colors_platinum_white"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_auth_username"
+            android:backgroundTint="@android:color/transparent"
+            android:autofillHints=""
+            android:layout_gravity="center"
+            />
+
+        <View
+            android:layout_width="340dp"
+            android:layout_height="3dp"
+            android:background="@drawable/line_shape"
+            android:backgroundTint="@color/core_colors_platinum_white"
+            app:layout_constraintTop_toBottomOf="@id/etPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/etEmail"
+
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:inputType="text"
+
+            android:hint="Email"
+            android:textColorHint="@color/core_colors_platinum_white"
+            android:maxLines="1"
+
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textColor="@color/core_colors_platinum_white"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_auth_username"
+            android:backgroundTint="@android:color/transparent"
+            android:autofillHints=""
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="366dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="@color/white"
+            android:text="Register"
+            android:textColor="@color/green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

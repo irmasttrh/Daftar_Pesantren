@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "52409693851",
+    "project_id": "daftar-pesantren-ec9bb",
+    "storage_bucket": "daftar-pesantren-ec9bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52409693851:android:90eb3e7f69bd1caa76f83e",
+        "android_client_info": {
+          "package_name": "com.kelompok3.mobile.uts.daftarpesantren"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxB49VZ5RfzryrDekhZUK_qZTfZIasX4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
